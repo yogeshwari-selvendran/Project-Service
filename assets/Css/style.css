@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+/* variable declarations */
+:root{
+    --primary:black;
+    --secondary: #6fcbd6;
+    --white-color:white;
+    --button-font: 16px;
+    --box-shadow: 0 4px 5px 0px #00000026;
+    --box-shadow2: 0px 0px 5px 1px #00000080;
+    --pharagraph-font-size:20px;
+    --box-phara-font-size:16px;
+    --nav-font-size:18px;
+    --text-color:#74787c;
+    --btn-color:#82b440;
+    --h1-font:61px;
+    --complain-hover-color:#d12616;
+}
+header{
+    background-color:var(--primary);
+    color:var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow);
+
+}
+.logo{
+    margin-top: 2.5%;
+}
+.logo img{
+    width: 110px;
+    margin-left: 35%;
+}
+.center{
+    margin-top: 2.5%;
+}
+.center ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+}
+.center li{
+    padding-left: 50px;
+    font-size: var(--nav-font-size);
+    font-weight: medium;
+    cursor: pointer;
+}
+.center li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+ul li::after{
+    content: '';
+    background-color:white;
+    display: block;
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    transition: 0.3s;
+
+}
+.center li:hover::after{
+    width: 100%;
+}
+.contact{
+    margin-top: 2.2%;
+    margin-right: 3%;
+}
+.contact a{
+    margin-left: 15px;
+}
+button{
+    padding: 8px 20px;
+    border-radius: 6px;
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    font-size: var(--button-font);
+
+}
+/* This is first section */
+main{
+
+}
+.top-section{
+      display: flex;
+      background-color:var(--secondary);
+      justify-content: space-between;
+      height: 700px;
+}
+.left-item{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10%;
+   margin-top: 12%;
+   /* justify-content:center; */
+}
+.left-item h1{
+    font-size: var(--h1-font);
+    max-width: 500px;
+    line-height: 68px;
+}
+.left-item p{
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 3%;
+}
+.left-item a{
+    
+}
+.big-btn{
+    font-size: var(--button-font);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 18px;
+    margin-top: 8%;
+}
+.right-item img{
+    background-color:var(--secondary);
+    width: 800px;
+    height: 400px;
+    margin-top: 30%;
+}
+/* Thgis is second section */
+.second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+  
+}
+.second-section h1{
+    text-align: center;
+}
+.item-gallary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e4e5c0;
+    height: 200px;
+}
+.item img{
+    height: 90px;
+}
+.item{
+    width: 369px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: #e3e4e5;
+    padding: 20px;
+   
+}
+.item:hover{
+    box-shadow: var(--box-shadow);
+}
+/* This is booking section */
+.booking{
+   background-image: url(../../assets/Images/background-2.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center 0;
+   /* margin-left: auto; */
+   /* margin-right: auto; */
+   height: 700px;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.409);
+   background-blend-mode: multiply;
+}
+form{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-14%, 1%);
+}
+form h1{
+   padding: 40px 49px;
+   font-weight: 700;
+   color: var(--white-color);
+}
+fieldset{
+    height: 520px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+input, select, .booking-btn{
+    margin-top: 10px;
+    height: 50px;
+    width: 300px;
+    padding: 5px 20px;
+    border-radius: 9px;
+    border-style: none;
+}
+button a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/* This is thired section */
+.thired-section h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.customar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+.review img{
+    height: 200px;
+    width: 300px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    background-color:#8ed4dcb6;
+    box-shadow:var(--box-shadow2);
+}
+.ratting img{
+      height: 12px;
+      width: 12px;
+}
+.ratting{
+    display: flex;
+    justify-content: space-between;
+}
+/*  This is Footer */
+footer{
+    background-color: var(--primary);
+    color: var(--white-color);
+    height: 270px;
+    margin-top: 50px;
+
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+   
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+footer ul li{
+    list-style: none;
+    padding: 7px;
+}
+.support img{
+    width: 110px;
+}
+.support{
+    margin-top:50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 200px;
+    margin-left: 100px;
+}
+/* .support button{
+    width: 150px;
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    color: var(--primary);
+} */
+.big-btn:hover{
+    background-color: #892474;
+    color:var(--white-color);
+}
+.support span{
+    font-size: var(--nav-font-size);
+
+}
+.about{
+    margin-top:50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    font-size: var(--nav-font-size);
+}
+.popular{
+    margin-top:50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    font-size: var(--nav-font-size);    
+}
+.follow{
+    margin-right: 100px;
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.application img{
+        height: 33px;
+        margin-top: 15px;
+}
+.follow .app{
+    height: 130px;
+   position: relative;
+   right: 40px;
+}
