@@ -148,13 +148,33 @@ span{
     color:var(--white-color);
 }
 /* This is accessories */
+.accessories{
+   background-color: #892474; 
+   height: 150px;
+}
+.accessories h1{
+    text-align: center;
+    padding-top: 60px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(189, 189, 189);
+    height: 40px;
+    margin-top: 55px;
+}
+.bike-car ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
 
 /* This is Footer Section */
 footer{
     background-color: var(--primary);
     color: var(--white-color);
     height: 270px;
-    margin-top: 50px;
+    margin-top: 350px;
 
 }
 .bottom{
