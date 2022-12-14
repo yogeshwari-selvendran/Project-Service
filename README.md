@@ -6,4 +6,4 @@ Market Research: https://docs.google.com/document/d/1S-3vW7cKDAWDmmbqOPRSlLVERfm
 
 User flow: https://fwbuzz.slack.com/files/U041V5KE0UT/F04CZ1FUSUU/screenshot__8_.png
 
-Wireframe: https://fwbuzz.slack.com/files/U041V5KE0UT/F04DGD9JH99/100_day_yogeshwari.pdf
+Wireframe: https://drive.google.com/file/d/1a86JZ82bJRrjJy6LJHxFh0a9QP0PCM8O/view?usp=sharing
