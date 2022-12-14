@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> TARKAN-Service</title>
+    <title> TORKAN-Service</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/Images/tittle-logo.png">
     <link rel="stylesheet" href="../../assets/Css/appoinment.css">
     <script src="https://kit.fontawesome.com/a9b709470e.js" crossorigin="anonymous"></script>
@@ -41,7 +41,7 @@
         </div>
         <div class="center">
             <ul>
-                <li><a href="../../Page/home.html">HOME</a></li>
+                <li><a href="../../Page/Home/home.html">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">SERVICES</a></li>
                 <li><a href="">PARTENERS</a></li>
@@ -54,13 +54,17 @@
             <nav>
                 <ul>
                     <li class="big-btn"><a href="#">Genaral service</a></li>
-                    <li class="big-btn"><a href="../../Page/appoinment.html" target="_blank">Appoinment</a></li>
+                    <li class="big-btn"><a href="../../Page//Appoinment/appoinment.html" target="_blank">Appoinment</a></li>
                     <li class="big-btn"><a href="#">Process</a></li>
                     <li class="big-btn"><a href="#">History</a></li>
                     <li class="big-btn"><a href="#">Insurance</a></li>
-                    <li class="big-btn"><a href="#">Accesssories</a></li>
+                    <li class="big-btn"><a href="../../Page/Accesssories/accessories.html">Accesssories</a></li>
                 </ul>
             </nav>
+        </div>
+        <!-- This is appoinment page -->
+        <div class="appoinment">
+            <h1>APPOINTMENT</h1>
         </div>
         <!-- This is live location section -->
         <div class="live-location">
@@ -68,19 +72,22 @@
         </div>
         <!-- Booking appoinment -->
         <div class="booking-app">
-            <h1>BOOKING AN APPOINTMENT</h1>
-            <hr>
-            <p>We are one of the leading auto repair shops serving customers in Tucson.</p>
-            <p>All mechanic services are performed by highly qualified mechanics.</p>
-        </div>
+            <div class="book-page"> 
+                <h1>BOOKING AN APPOINTMENT</h1>
+                <hr>
+                <p>We are one of the leading auto repair shops serving customers in Tucson.</p>
+                <p>All mechanic services are performed by highly qualified mechanics.</p>
+            </div>
+           
+        </div><br><br>
         <!-- Vehicle type -->
         <div class="vehicle-type">
             <div class="year">
-                <label>VEHICLE YEAR</label>
+                <label>VEHICLE YEAR</label><br>
                 <input id="vehicle-year" class="chose-year" name="vehicle-year" type="number" value="2008" step="1">
             </div>
             <div class="year">
-                <label>VEHICLE MAKE</label>
+                <label>VEHICLE MAKE</label><br>
                 <select name="vehicle-make" id="company">
                     <option value="">Choose</option>
                     <option value="">Honda</option>
@@ -95,20 +102,41 @@
                 </select>
             </div>
             <div class="year">
-                <label>VEHICLE MILEAGE</label>
-                <input id="vehicle-mileage" class="mileage" name="vehicle-mileage" type="number" value="" data-value="" placeholder="Vehicle Mileage">
+                <label>VEHICLE MILEAGE</label><br>
+                <input id="vehicle-mileage" class="mileage" name="vehicle-mileage" type="number" value="" data-value="" placeholder="Vehicle Mileage" required>
             </div>
-        </div>
+        </div><br><br>
         <div class="appoinment-section">
             <div class="date">
                 <div class="date-choose">
-                    <label for="appointment-date">APPOINTMENT DATE</label>
-                    <input type="hidden" name="appointment-date-label" value="APPOINTMENT DATE">
-                    <span class="ui-icon cc-template-arrow-vertical-3"></span>
-                    <input id="appointment-date" class="cost-calculator-cost-slider-input type-date cost-calculator-big hasDatepicker" name="appointment-date" type="type-date" value="" data-value="" placeholder="Preffered Date of Appointment">
+                    <label for="appointment-date">APPOINTMENT DATE</label><br>
+                    <input type="date" required>
+                </div><br>
+                <div class="date-choose">
+                    <label for="appointment-date">PREFFERED TIME FRAM</label><br>
+                    <input type="time" required>
+                </div><br>
+                <div class="date-choosing">
+                    <label for="appointment-date">SELECT SERVICES NEEDED</label><br>
+                    <div class="list-checkbox">
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Air Conditioning</label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Breakes repair</label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Engine Diagnostics</label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Heating & Cooling </label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Oil, Lube & Filters </label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Steering & Supension</label>
+                      <label for="text" class="checkbox"> <input type="checkbox" class="item"> Transmission</label>
+                    </div>
                 </div>
             </div>
-            <div class="addres"></div>
+            <div class="addres">
+                <label for="">CONTACT DETAILS</label><br>
+                <input type="text" placeholder="Your Name*" required ><br>
+                <input type="email" placeholder="Your Email*" required><br>
+                <input type="number" placeholder="Your Phone" maxlength="10" required><br>
+                <input id="message" type="message" placeholder="Additional Questions or Comments"><br>
+                <button><a href="">SUBMIT NOW</a></button>
+            </div>
            
         </div>
     </main>

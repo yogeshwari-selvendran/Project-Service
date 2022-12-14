@@ -199,7 +199,57 @@ hr{
 .custom p:hover{
     color: var(--primary);
 }
-
+/* This is appoinment-section */
+.appoinment-section{
+margin-top: 50px;
+}
+.addres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 490px;
+    margin-left: 400px;
+}
+label{
+    display: block;
+    font-weight: 600;
+    background: #F5F5F5;
+    padding: 11px 16px;
+    line-height: 26px;
+    text-align: center;
+}
+.addres input{
+    width: 600px;
+    margin-top: 10px;
+    height: 60px;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 15px;
+    color: #303030;
+}
+#message{
+    height: 150px;
+}
+button a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+button{
+    padding: 8px 20px;
+    border-radius: 6px;
+    height: 50px;
+    border-style: none;
+    background-color: #0f80f1eb;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+button:hover{
+    background-color: #094887;
+}
 /* Complain page */
 .complain{
     display: flex;
@@ -334,4 +384,7 @@ footer ul li{
     height: 130px;
    position: relative;
    right: 40px;
+}
+.aakash{
+    background-color: red;
 }

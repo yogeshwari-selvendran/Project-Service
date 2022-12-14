@@ -53,7 +53,7 @@
     font-weight: medium;
     cursor: pointer;
 }
-.center li a{
+li a{
     text-decoration: none;
     color: var(--white-color);
 }
@@ -149,7 +149,7 @@ span{
 }
 /* This is accessories */
 .accessories{
-   background-color: #892474; 
+   background-color: #7803ae; 
    height: 150px;
 }
 .accessories h1{
@@ -160,7 +160,6 @@ span{
     display: flex;
     justify-content: space-between;
     background-color: rgb(189, 189, 189);
-    height: 40px;
     margin-top: 55px;
 }
 .bike-car ul{
@@ -168,13 +167,82 @@ span{
     list-style: none;
     justify-content: space-evenly;
 }
-
-/* This is Footer Section */
+.bike-car li{
+    padding: 19px 30px;
+    font-size: var(--button-font);
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: #24893f;
+    margin-right: 1px;
+}
+/* This is product section */
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eff1f3;
+    width: 250px;
+    height: 420px;
+    box-shadow: 0px 0px 10px 5px rgb(0,0,0,0.1);
+}
+.detail-section{
+    background-color: #74787c;
+    height: 150px;
+    width: 250px;
+    box-shadow: 0px 0px 10px 5px rgb(0,0,0,0.1);
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+.product h4{
+    text-align: center;
+    margin-top: 20px;
+}
+h5{
+ padding: 10px 20px;
+ font-size: medium;
+ 
+}
+i{
+    padding: 4px;
+}
+.amount span{
+    display: flex; 
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+.product img{
+    height: 300px;
+    width: 200px;
+    /* background-color: #74787c; */
+}
+.product button{
+    width: 200px;
+    border-style: none;
+    margin-left: 20px;
+}
+/* This is product-condainer */
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+.main-foot{
+    border: 2px solid black;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 2100px;
+}
+/*  This is Footer */
 footer{
     background-color: var(--primary);
     color: var(--white-color);
     height: 270px;
-    margin-top: 350px;
+    margin-top: 50px;
 
 }
 .bottom{

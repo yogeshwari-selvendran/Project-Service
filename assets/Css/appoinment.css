@@ -79,17 +79,6 @@ ul li::after{
 .user li{
    padding: 15px;
 }
-.user, .profile{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    position: relative;
-    bottom: 9px;
-}
-button{
-    padding: 8px 20px;
-    border-radius: 6px;
-}
 /* This is thired nav bar */
 .sub-nav a{
     text-decoration: none;
@@ -99,7 +88,7 @@ button{
    display: flex;
    justify-content: space-around;
    font-size: var(--nav-font-size);
-   margin-top: 0px;
+   margin-top: 3px;
 }
 .sub-nav li{
    box-sizing: border-box;
@@ -139,25 +128,45 @@ span{
 .contact-item i{
     margin-right:10px;
 }
+/* This is appointment */
+.appoinment{
+    background-color: #4a7bdc;
+    height: 200px;
+    margin-top: 2px;
+    color: var(--white-color);
+}
+.appoinment h1{
+    text-align: center;
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 2px;
+}
 /* This is live location page */
 .live-location img{
     height: 793px;
 }
 /* Booking Appointment */
 .booking-app{
+    height: 400px;
+    background-color: #4a7bdc;
+}
+.book-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 150px;
-    margin-top: 10px;
+    height: 190px;
+    padding-top: 190px;
+    color: var(--white-color);
 }
 .booking-app p{
-    font-size:var(--box-phara-font-size);
-
+    font-size:20px;
+    margin-top: 30px;
 }
 .booking-app hr{
-    width: 300px;
+    margin-top: 30px;
+    width: 350px;
     line-height: 5px;
     list-style: inherit;
 }
@@ -165,6 +174,8 @@ span{
 .vehicle-type{
     display: flex;
     justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 50px;
 }
 label{
     display: block;
@@ -173,9 +184,9 @@ label{
     padding: 11px 16px;
     line-height: 26px;
 }
-input, select{
+.vehicle-type input, select{
     max-width: none;
-    height: auto;
+    height: 60px;
     border: 1px solid #EBEBEB;
     background: #FFF;
     font-family: 'Raleway', 'Arial', sans-serif;
@@ -184,13 +195,104 @@ input, select{
     padding: 12px 15px;
     color: #303030;
     margin: 0;
+    width: 350px;
+}
+#company{
+    width: 400px;
+    height: 60px;
+}
+/* This is date and time choosing section */
+.appinment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date-choose input{
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    width: 600px;
+    height: 60px;
+    padding: 12px 15px;
+}
+.list-checkbox .checkbox{
+    font-size: 16px;
+    width: auto;
+    font-weight: var(--button-font);
+    background: #fffefec5;
+    border-style: solid;
+    border-color: #74787c18;
+    margin: 5px;
+}
+.date{
+    float: left;
+    /* width: 50%; */
+    margin-left: 90px;
+}
+.date label{
+    width: 600px;
+}
+.item{
+    width: 20px;
+}
+.date-choosing{
+    width: 600px;
+}
+.list-checkbox input{
+   width: 15px;
+   padding: 0;
+}
+.list-checkbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.addres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 100px;
+    float: right;
+}
+.addres input{
+    width: 600px;
+    margin-top: 10px;
+    height: 60px;
+    border: 1px solid #EBEBEB;
+    background: #FFF;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 15px;
+    color: #303030;
+}
+#message{
+    height: 150px;
+}
+button a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+button{
+    padding: 8px 20px;
+    border-radius: 6px;
+    height: 50px;
+    border-style: none;
+    background-color: #0f80f1eb;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+button:hover{
+    background-color: #094887;
 }
 /*  This is Footer */
 footer{
     background-color: var(--primary);
     color: var(--white-color);
     height: 270px;
-    margin-top: 900px;
+    margin-top: 600px;
 
 }
 .bottom{

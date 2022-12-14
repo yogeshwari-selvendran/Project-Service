@@ -145,7 +145,7 @@ span{
     display: flex;
     justify-content: space-around;
     font-size: var(--nav-font-size);
-    margin-top: 3px;
+    margin-top: 2px;
 }
 .sub-nav li{
     box-sizing: border-box;
@@ -155,9 +155,6 @@ span{
 .sub-nav a{
     color: black;
 }
-
-
-
 /*  This is Home page animation */
 .home-gallery{
     width: 100%;
